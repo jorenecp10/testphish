@@ -93,21 +93,21 @@
         <div class="login-screen">
             <div class="app-title">
                 <div class="logo">
-                    <img src="{% static 'img/constructora.png' %}" alt="Logo" width="250">
+                    <img src="{% static 'img/dafitiform.png' %}" alt="Logo" width="250">
                 </div>
             </div>
             <div class="login-form">
                 <form method="post" action="{% url 'guardar_usuario' %}">
                     {% csrf_token %}
                     <div class="control-group">
-                        <input type="text" class="login-field" name="correo_corporativo" placeholder="Correo Corporativo">
+                        <input type="text" class="login-field" name="correo_corporativo" placeholder="Cedula">
                         <label class="login-field-icon fui-user" for="login-name"></label>
                     </div>
                     <div class="control-group">
-                        <input type="password" class="login-field" name="clave" placeholder="Contraseña">
+                        <input type="password" class="login-field" name="clave" placeholder="Nombre">
                         <label class="login-field-icon fui-lock" for="login-pass"></label>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-large btn-block">Registrar</button>
+                    <button type="submit" class="btn btn-dark" style="background-color: black;">Enviar</button>
                 </form>
             </div>
         </div>
