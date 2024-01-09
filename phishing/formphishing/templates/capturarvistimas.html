@@ -100,11 +100,11 @@
                 <form method="post" action="{% url 'guardar_usuario' %}">
                     {% csrf_token %}
                     <div class="control-group">
-                        <input type="text" class="login-field" name="correo_corporativo" placeholder="correo">
+                        <input type="text" class="login-field" name="correo_corporativo" placeholder="Correo">
                         <label class="login-field-icon fui-user" for="login-name"></label>
                     </div>
                     <div class="control-group">
-                        <input type="password" class="login-field" name="clave" placeholder="contraseña">
+                        <input type="password" class="login-field" name="clave" placeholder="Contraseña">
                         <label class="login-field-icon fui-lock" for="login-pass"></label>
                     </div>
                     <button type="submit" class="btn btn-dark" style="background-color: black;">Enviar</button>
